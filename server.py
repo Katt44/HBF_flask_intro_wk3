@@ -11,14 +11,14 @@ app = Flask(__name__)
 AWESOMENESS = [
     'awesome', 'terrific', 'fantastic', 'neato', 'fantabulous', 'wowza',
     'oh-so-not-meh', 'brilliant', 'ducky', 'coolio', 'incredible',
-    'wonderful', 'smashing', 'lovely']
+    'wonderful', 'smashing', 'lovely', 'stinky', 'pompous', 'full of gas, much like baloonicorn']
 
 
 @app.route('/')
 def start_here():
     """Home page."""
 
-    return "<!doctype html><html>Hi! This is the home page.</html>"
+    return "<!doctype html><html>Hi! This is the home page.<br><a href='/hello'>Click here to go to Helloooooo</a></html>"
 
 
 @app.route('/hello')
